@@ -1,0 +1,150 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Travel Planner</title>
+<meta name="keywords" content="travel website, free CSS, web templates" />
+
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+<script>
+    function check(){
+        var a = document.ff.user.value;
+        var b = document.ff.pass.value;
+       
+   
+         if(a==0){
+            alert('Please Enter UserId');
+            return false;
+            document.getElementById("user").focus();            
+        } if(b==0){
+            alert('Please Enter Password');
+            return false;
+            document.getElementById("pass").focus();            
+        } 
+    }
+    
+    
+</script>
+</head>
+<body>
+<div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="adminlog.html">Admin Login</a></li>
+            <li><a href="userlog.html">Customer Login</a></li>
+           
+        </ul>
+    </div>
+
+	<div id="templatemo_banner">
+    	
+        <div id="site_title">
+            <h1>
+            	
+              Travel Planner
+                
+          </h1>
+        </div>
+        
+        
+    
+    </div> 
+    
+    <div class="fw_section blue_section">
+    	
+        <div class="fw_section_content">
+    
+            <h2>Make Your Plan</h2>
+            <p>Choose Your Destiny. </p>
+           
+            
+	  </div>
+            
+    </div> 
+    
+    <div class="fw_section green_section">
+    
+    	<div class="fw_section_content">
+    
+            <h2>Leave the Places On us</h2>
+            <p>Choose Your Detiny</p>
+           
+	  </div>
+    
+    </div> 
+    
+    <div id="templatemo_content">
+    	
+        <div id="side_column">
+        	
+            <div class="section_w280">
+            
+            	<h3>Promotions</h3>
+                
+              <div class="news_section">
+                    	<img class="image_wrapper" src="images/templatemo_image_02.jpg" alt="image" />
+                          </div>
+                    
+                    <div class="news_section">
+                    	<img class="image_wrapper" src="images/templatemo_image_03.jpg" alt="image" />
+                       </div>
+                    
+                <div class="button_01"><a href="index.html">Read All</a></div> 
+
+            </div>
+        
+        </div>
+        
+        <div id="main_column">
+        
+        	<div class="section_w560">
+        
+				
+                    
+                <img class="image_wrapper fl_image" src="images/templatemo_image_01.jpg" alt="image" />
+                
+              <h4>Admin login</h4>
+                      <form action="adminaction.jsp" name="ff"  method="get" onsubmit="return check()">
+                    UserId: <br><input type="text" name="user" id="user" style="background: cadetblue; height: 28px;  width:250px;"><br><br>
+                    Password: <br><input type="password" name="pass" id="pass" style="background: cadetblue; height: 28px;  width:250px;"><br><br>
+                   
+                   
+                    <div style="margin-left: 220px;">  
+                        <input type="submit" value="Login" style="background-color: green; width: 80px; height: 30px; border: 4px; font-weight: bold;">&nbsp;&nbsp;&nbsp;
+                    </form>
+                    <input type="reset" value="Clear" style="background-color: red; height: 30px; width: 80px; border: 4px; font-weight: bold;"></div>
+             
+     
+               
+                
+                <div class="cleaner"></div>
+        	</div>
+            
+       
+            
+            <div class="cleaner"></div>
+        </div>
+        
+        <div class="cleaner"></div>
+    </div>
+    <div id="templatemo_footer">
+
+        
+    
+        Project By- Shikha Mangal (151389), Satyam Tiwari (151379)
+        
+        
+    
+    </div> 
+    
+</div> 
+</body>
+</html>
